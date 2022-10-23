@@ -1,5 +1,5 @@
 namespace :export do
-  desc "Export articles and comments"
+  desc "Export orders"
   task :export_to_seeds => :environment do
     Order.all.each do |order|
       excluded_keys = ['created_at', 'updated_at', 'id']
